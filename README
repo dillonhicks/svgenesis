@@ -1,0 +1,45 @@
+README
+========
+
+Installing
+*************
+
+svgenesis provides a standard setup.py distutils script for installing
+a Python module. To install this module globally you may run:
+
+bash$ python setup.py install
+
+Alternatively, and my prefered install method, you may install it
+locally:
+
+    bash$ python setup.py install --prefix=$HOME
+
+Installing to your home directory may mean updating your .bashrc
+variables similar to the following::
+
+    export PATH=$PATH:$HOME/bin
+    export LD_LIBRARY_PATH:$LD_LIBRARY_PATH:$HOME/lib
+    export PYTHONPATH=$PYTHONPATH:$HOME/lib/python<version>/site-packages
+
+
+Testing svgenesis
+******************
+
+To test the svgenesis module without installing, you will need to run
+the test_setup.sh script::
+
+    bash$ . testrc
+
+
+The module provides a test script as well as unit tests. The unit
+tests are mainly to verify the installation and to show everything is
+working as expected, while the tests scripts show how to use the
+module.
+
+Unit Tests
+-----------
+
+The Unit Tests are found in `tests' directory, sibling to the
+`svgenesis' directory and my be run by executing::
+
+    bash$ make tests

@@ -1,0 +1,10 @@
+# Points your python path to the svg_generation directory for testing
+# for the svgenesis module. Only valid for the current bash shell, if
+# you open another terminal you will have to run this again.
+# 
+# Run this script like this:
+#
+# bash$ . test_setup.sh
+#
+# The . specifies to execute this file within the current shell.
+export PYTHONPATH=$PYTHONPATH:`pwd`
